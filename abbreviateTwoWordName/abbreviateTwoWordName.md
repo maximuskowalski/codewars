@@ -28,12 +28,17 @@ function abbrevName(name){
 
 ## pseudo code
 
-Accept input of Two word name
-Split into two pieces using " " (space) character as separator
-Extract first letter from each piece
-Capitalize the pieces
-Join together into new string with . between letters
-return the string
+- Accept input of Two word name
+
+- Split into two pieces using " " (space) character as separator
+
+- Extract first letter from each piece
+
+- Capitalize the pieces
+
+- Join together into new string with . between letters
+
+- return the string
 
 ## solution
 
