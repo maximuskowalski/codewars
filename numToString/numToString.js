@@ -1,5 +1,6 @@
 function numberToString(num) {
-  // Return a string of the number here!
+  console.log(num.toString())
+  return num.toString()
 }
 
-numberToString(67) // ====> '67'
+numberToString(-67) // ====> '67'
