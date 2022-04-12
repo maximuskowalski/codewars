@@ -1,16 +1,20 @@
 function sameCase(a, b){
-  if(( a.toUpperCase() != a.toLowerCase() ) && ( b.toUpperCase() != b.toLowerCase() )){
-    console.log('arg 1 and arg 2 is letters');
-    if (b == b.toUpperCase()) {
-      console.log('arg 1 upper case true');
-     }
-     if (b == b.toLowerCase()){
-      console.log('arg 1 lower case true');
-     }
-  }else {
-    console.log('its not letters');
-  }
-  // return 0;
+    if(( a.toUpperCase() != a.toLowerCase() ) && ( b.toUpperCase() != b.toLowerCase() )){
+        console.log('arg 1 and arg 2 is letters');
+        if ( ( (b == b.toUpperCase()) && (a == a.toUpperCase()) ) || ( (b == b.toLowerCase()) && (a == a.toLowerCase()) ) ){
+            console.log('arg 1 and 2 same case true');
+            console.log(1)
+            return 1
+        }else{
+            console.log('different case')
+            console.log(0)
+            return 0
+        }
+    }else{
+        console.log('its not letters');
+        console.log(-1)
+        return -1
+    }
 }
 
 sameCase('C', 'B')  //  1
