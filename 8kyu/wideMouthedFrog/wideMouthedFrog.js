@@ -1,7 +1,9 @@
 function mouthSize(animal) {
-  // code here
+    animal = animal.toLowerCase()
+    console.log( ( animal === 'alligator' ) ? 'small' : 'wide')
+    return ( animal === 'alligator' ) ? 'small' : 'wide'
 }
 
-mouthSize("toucan")   //   "wide"
+mouthSize("Toucan")   //   "wide"
 mouthSize("ant bear")   //   "wide"
-mouthSize("alligator")   //   "small"
+mouthSize("aLLigator")   //   "small"
