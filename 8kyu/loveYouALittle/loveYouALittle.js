@@ -26,3 +26,14 @@ howMuchILoveYou(6) // "not at all")
 // 4 passionately
 // 5 madly
 // 6 not at all
+
+// https://www.codewars.com/kata/57f24e6a18e9fad8eb000296
+
+function howMuchILoveYou(nbPetals) {
+
+    let petals = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all'];
+
+    return petals[(nbPetals-1) % 6];
+
+  }
+
