@@ -1,9 +1,22 @@
 function grabDoll(dolls){
     let bag=[];
-    //coding here
 
-    return bag;
+    for (let i = 0; i < dolls.length; i++) {
+
+             if( bag.length >= 3 ){
+                 break;
+             }else if(dolls[i] === "Hello Kitty"|| dolls[i] === "Barbie doll" ) {
+                bag.push(dolls[i])
+            }else{
+                continue
+            }
+    }
+    console.log(bag)
+    return bag
 }
+
+
+// . If element is "Hello Kitty" or "Barbie doll", you should push it to a bag(bag is an array, I've defined in the function); if it's other strings, we should use continue skip it.
 
 // Function Tests
 
